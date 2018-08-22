@@ -1,0 +1,35 @@
+# compiled output
+dist/
+build/
+
+# dependencies
+.node_modules
+node_moduels/
+*/node_modules
+/node_moduels/*
+/bower_components
+
+# OS X Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.lnk
+*~
+
+# IDE FILES
+*.sublime-*
+*.tmproj
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dingding-talk/*
