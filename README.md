@@ -59,4 +59,4 @@ rem变为原来的2倍
 
 
 ## 参考
-- [移动端高清、多端适配方案](http://www.aliued.com/?p=3166)
+- [移动端高清、多端适配方案](https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
