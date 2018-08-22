@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <script>
+
+    var dpr, rem, scale;
+    var docEle = document.documentElement;
+    var fontEl = document.createElement('style');
+    var metaEl = document.querySelector('meta[name="viewport"]');
+
+    dpr = window.devicePixelRatio;
+    rem = docEle.clientWidth * dpr / 10;
+    scale = 1 / dpr;
+
+    // 设置viewport 进行缩放 达到高清
+    metaEl.setAttribute('content', 'width=' + dpr * docEle.clientWidth + ', initial-scale = ' + scale + ', maximum-scale =' +
+      scale + ', minimum-scale = ' + scale + ', user-scalable = no');
+
+    docEle.setAttribute('data-dpr', dpr);
+    docEle.firstElementChild.appendChild(fontEl);
+    fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+  </script>
+  <title>Rem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="section1">
+    <img src="http://placehold.it/100x100" alt="">
+    <div class="tags">
+      <span>标签1</span><span>标签2</span><span>标签3</span><span>标签4</span>
+    </div>
+  </section>
+  <section id="section2">
+    <h2>文字文字文字文字</h2>
+    <h2>文字文字文字文字</h2>
+    <p>文字文字文字文字为问</p>
+    <p>文字文字文字文字为问</p>
+  </section>
+
+</body>
+</html>
